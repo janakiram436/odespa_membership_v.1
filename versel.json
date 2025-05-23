@@ -1,0 +1,17 @@
+{
+    "headers": [
+      {
+        "source": "/(.https://odespa-membership-v-1.vercel.app/)",
+        "headers": [
+          {
+            "key": "X-Frame-Options",
+            "value": ""
+          },
+          {
+            "key": "Content-Security-Policy",
+            "value": "frame-ancestors https://odespa-membership-v-1.vercel.app/"
+          }
+        ]
+      }
+    ]
+  }

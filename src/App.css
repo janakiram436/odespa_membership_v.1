@@ -111,7 +111,6 @@ body {
   background: #f8f3ed;
   border-radius: 8px;
   padding: 2rem 1.5rem;
-  margin-left: 15px;
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -127,11 +126,8 @@ body {
 }
 
 .service-style3.membership-type:hover h2,
-.service-style3.membership-type:active h2 {
-  color: #fff !important;
-}
-
 .service-style3.membership-type:hover p,
+.service-style3.membership-type:active h2,
 .service-style3.membership-type:active p {
   color: #fff;
 }
@@ -227,6 +223,7 @@ body {
   transform: none !important;
   box-shadow: none !important;
 }
+
 .arrow {
   position: absolute;
   top: 50%;
@@ -498,12 +495,10 @@ label {
     padding: 0.7rem 0.4rem;
     margin: 0 auto;
     border-radius: 10px;
-    margin-left: 30px;
   }
   .service-style3.membership-type h2 {
     font-size: 1.05rem;
     margin-bottom: 0.3rem;
-    
   }
   .service-style3.membership-type p {
     font-size: 0.82rem;
@@ -1390,7 +1385,6 @@ label {
   .service-style3.membership-type .select-location {
     font-size: 0.95rem;
     padding: 0.8rem 1.2rem;
-    
     border-radius: 8px;
     min-height: 44px;
     width: 100%;
@@ -1416,7 +1410,6 @@ label {
   .service-style3.membership-type h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    
   }
   
   .service-style3.membership-type p {
@@ -1444,46 +1437,5 @@ label {
   
   .service-style3.membership-type p {
     font-size: 0.85rem;
-  }
-}
-
-/* Custom arrow styles */
-.custom-arrow {
-  position: absolute;
-  top: 45%;
-  background: #f8f3ed;
- 
-  font-size: 1.5rem;
-  padding: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  color: #b69348;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.custom-arrow:hover {
-  background: #b69348;
-  color: white;
-}
-
-.prev-arrow {
-  left: -45px;
-}
-
-.next-arrow {
-  right: -45px;
-}
-
-@media (max-width: 768px) {
-  .prev-arrow {
-    left: -30px;
-  }
-  .next-arrow {
-    right: -30px;
   }
 }

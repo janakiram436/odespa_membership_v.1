@@ -157,7 +157,14 @@ const App = () => {
   useEffect(() => {
     setupRecaptcha();
   }, []);
-
+  useEffect(() => {
+    if (memberships.length > 0) {
+      setTimeout(() => {
+        window.dispatchEvent(new Event('resize'));
+      }, 500);
+    }
+  }, [memberships]);
+  
   // Fetch membership data from API
   useEffect(() => {
     const fetchMemberships = async () => {
